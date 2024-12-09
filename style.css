@@ -1,0 +1,403 @@
+/*----- General CSS Start -----*/
+body {
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+    color: #222;
+    font-family: 'Inter';
+}
+a {
+    text-decoration: none;
+    color: #2381D9;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins';
+}
+h1 {
+    font-weight: 600;
+    line-height: 1.15;
+    font-size: 44px;
+    color: #0b3858;
+}
+h2 {
+    font-size: 27px;
+    margin: 1.5em 0 0.5em;
+    color: #0b3858;
+    font-weight: 600;
+    line-height: 1.45;
+}
+h3 {
+    font-size: 22px;
+    color: #0b3858;
+    font-weight: 600;
+    margin: 1.25em 0 0.5em;
+    line-height: 1.45;
+}
+h6 {
+    font-size: 16px;
+    font-family: 'Inter';
+    color: #222;
+}
+p {
+    font-size: 19px;
+    font-family: 'Inter';
+    color: #222;
+    margin: 0.85em 0;
+}
+.ms-font-14 {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.ms-font-poppoins {
+    font-family: 'Poppins';
+}
+.ms-font-inter {
+    font-family: 'Inter';
+}
+.ms-arrow-list {
+    padding-inline-start: 1.15em;
+}
+.ms-arrow-list li::marker {
+    content: "→ ";
+    color: #2381d9;
+}
+.ms-arrow-list li {
+    margin: 0.65em 0;
+}
+.ms-features-list {
+    list-style: none;
+    -moz-columns: 2;
+    columns: 2;
+    -moz-column-gap: 12px;
+    column-gap: 12px;
+}
+.ms-features-list li {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.ms-features-list li:before {
+    content: url('assets/images/blue.svg');
+}
+.ms-pros-list, .ms-cons-list {
+    columns: 1;
+}
+.ms-pros-list li:before {
+    content: url('assets/images/green.svg');
+}
+.ms-cons-list li:before {
+    content: url('assets/images/red.svg');
+}
+.ms-yellow-btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0D134C;
+    background: #FEC006;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    padding: 5px 10px;
+    transition: 0.3s all linear;
+}
+.ms-yellow-btn:hover {
+    background: #FEDF82;
+    text-decoration: none;
+}
+.ms-link {
+    font-size: 15px;
+    font-weight: 600;
+}
+.ms-hr {
+    border-top-color: #D8DEE3;
+    opacity: 1;
+}
+figure {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #d8dee3;
+}
+.ms-quote-box {
+    padding: 20px;
+    background: rgba(234, 245, 255, 0.5);
+    border-radius: 18px;
+}
+.ms-quote-box q {
+    color: #0b3858;
+}
+.ms-quote-box q:before {
+    position: absolute;
+    right: 100%;
+}
+.ms-quote-box .ms-quote-name {
+    color: #7d98aa;
+}
+.ms-quote-box .ms-quote-name em:first-child b {
+    font-style: normal;
+}
+.ms-quote-box .ms-quote-name em:first-child:after {
+    content: '|';
+    padding-left: 6px;
+}
+.ms-special-links {
+    margin-inline: calc(-1* 24px);
+}
+.ms-special-links a {
+    padding: 12px;
+    border: 1px solid #e7ecee;
+    border-radius: 12px;
+    line-height: 1.25;
+    color: #2998ff;
+    gap: 12px;
+    transition: 0.3s all linear;
+    height: 74px;
+}
+.ms-special-links a:hover {
+    border-color: #94cbff;
+}
+.ms-special-links a:after {
+    transition: 0.3s all linear;
+}
+.ms-special-links a:hover:after {
+    translate: 0.25em 0;
+}
+.ms-special-links a > div {
+    gap: 12px;
+}
+.ms-special-links a:after {
+    content: "→";
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 12px;
+}
+.ms-pricing-box {
+    background: #2998ff0d;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 0 -12px -12px;
+}
+.ms-pricing-box p span:not(:first-child):before {
+    content: "•";
+    display: inline-block;
+    margin: 0 10px;
+}
+summary {
+    display: flex;
+}
+summary:after {
+    color: #2998ff;
+    content: "⯈";
+}
+.ms-table {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.ms-table th {
+    font-size: 16px;
+    padding: 12px;
+}
+.ms-table td {
+    font-size: 15px;
+    text-align: center;
+    padding: 12px;
+}
+.ms-table img {
+    height: 36px;
+}
+.ms-table tr:nth-child(even) {
+    background: #f8fafc;
+}
+.ms-table tr:first-child td:first-child {
+    min-width: 100px;
+}
+.ms-table tr:first-child td {
+    min-width: 270px;
+}
+.ms-table-wrapper {
+    border: 1px solid #D8DEE3;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+.ms-table-2 tr:first-child th {
+    text-align: center;
+}
+.ms-table-2 tr:first-child th {
+    min-width: 250px;
+}
+.ms-table-2 tr:first-child th:first-child {
+    min-width: 180px;
+}
+/*----- General CSS End -----*/
+
+/*----- Banner Section CSS Start -----*/
+.ms-banner-section {
+    padding: 80px 20px;
+}
+.ms-banner-section .ms-main-img {
+    border-radius: 24px;
+}
+.ms-banner-section .ms-meta {
+    font-size: 14px;
+    color: #436984;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ms-banner-section .ms-meta-heading {
+    font-size: 12px;
+    color: #a9b9c7;
+}
+.ms-banner-section .ms-meta-description {
+    font-size: 16px;
+    color: #222222;
+}
+.ms-banner-section .ms-meta-img {
+    width: 36px;
+    height: 36px;
+}
+.ms-banner-section .ms-meta-content {
+    gap: 15px;
+}
+.ms-banner-section .ms-meta-content > div {
+    gap: 10px;
+}
+
+/*----- Banner Section CSS End -----*/
+
+/*----- Main Content Section CSS Start ----*/
+.ms-top-picks {
+    background-color: #F9FAFB;
+    margin-block: 2em;
+    margin-inline: calc(-1* 24px);
+    padding: 24px;
+    border-radius: 24px;
+}
+.ms-top-picks-box {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .1);
+    padding: 18px;
+    border-radius: 12px;
+}
+.ms-top-picks-box .ms-picks-number {
+    background-color: #2381d9;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Inter';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 0 12px;
+    top: 0;
+    right: 0;
+}
+.ms-top-picks-box .ms-picks-unhighlight {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    background: #94CBFF;
+}
+.ms-top-picks .ms-bottom-heading {
+    color: #0b3858;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    font-size: 14px;
+}
+.ms-steps {
+    gap: 21px;
+}
+.ms-step {
+    background: #fff;
+    border: 1px solid #e7ecee;
+    padding: 12px;
+    border-radius: 9px;
+    position: relative;
+}
+.ms-step:after {
+    content: url('assets/images/right-arrow.svg');
+    position: absolute;
+    top: 25px;
+    right: -22px;
+}
+.ms-step:last-child:after {
+    display: none;
+}
+.ms-step .ms-step-title {
+    color:#0b3858;
+}
+.ms-step-last img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.ms-main-box-number {
+    color: #fff;
+    background: #2998ff;
+    font-size: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+.ms-main-logo {
+    height: 40px;
+}
+.ms-available-sidebar {
+    border-left: 1px solid #d8dee3;
+    padding-left: 12px;
+    margin-left: 12px;
+}
+.ma-available-text {
+    font-size: 14px;
+    color: #a9b9c7;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0.7px;
+}
+.ms-available-icons a {
+    transition: 0.3s all linear;
+}
+.ms-available-icons a:hover {
+    filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+}
+.ms-main-box-connecteam .ms-main-logo {
+    height: 24px;
+}
+/*----- Main Content Section CSS End -----*/
+
+@media (max-width:991px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    body, p {
+        font-size: 16px;
+    }
+    .ms-banner-section {
+        padding: 50px 0;
+    }
+    .ms-top-picks-box img {
+        width: 130px;
+    }
+    .ms-top-picks .col-md-7 .col-md-6:last-child .ms-top-picks-box img {
+        width: 90px;
+    }
+    .ms-step:after {
+        right: -14px;
+    }
+    .ms-features-list {
+        -moz-columns: 1;
+        columns: 1;
+    }
+    .ms-top-picks {
+        margin: 0;
+    }
+    .ms-pricing-box {
+        margin: 0 0 -12px;
+    }
+}
